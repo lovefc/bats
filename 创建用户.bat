@@ -2,6 +2,7 @@
 ::创建一个用户  -- by lovefc
 color 1f
 title 创建用户--by lovefc
+%1 mshta vbscript:CreateObject("Shell.Application").ShellExecute("cmd.exe","/c %~s0 ::","","runas",1)(window.close)&&exit
 :name
 cls
 set /p name=    请输入用户名（简单点，起名的方式简单点）:
